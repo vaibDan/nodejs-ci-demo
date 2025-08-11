@@ -9,8 +9,12 @@ function subtract(a, b) {
 }
 
 module.exports = add;
+module.exports.multiply = multiply;
+module.exports.subtract = subtract;
 
 if (require.main === module) {
   console.log("Sum:", add(2, 3));
+  console.log("Product:", multiply(2, 3));
+  console.log("Difference:", subtract(5, 3));
 }
 
